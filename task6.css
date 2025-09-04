@@ -8,6 +8,10 @@ body {
     margin: 20% 20%;
 }
 
+
+/* FACE- NOSE, EYES, EARS, PATCH  */
+
+
 .face {
     width: 180px;
     height: 80px;
@@ -66,6 +70,10 @@ body {
     right: 0px;
 }
 
+
+/* NECK, COLLAR  */
+
+
 .neck {
     width: 100px;
     height: 10px;
@@ -86,9 +94,13 @@ body {
     z-index: 5;
 }
 
+
+/* BODY SHADOW  */
+
+
 .body-shadow {
     width: 300px;
-    height: 195px;
+    height: 180px;
     background-color: #cc7949;
     border-radius: 0px 70px 0px 150px;
     position: relative;
@@ -96,6 +108,10 @@ body {
     top: 25px;
     z-index: 2;
 }
+
+
+/* BACK LEG'S PART  */
+
 
 .leg-back .backleg-part1 {
     width: 40px;
@@ -113,7 +129,7 @@ body {
     background-color: #b44121;
     position: absolute;
     left: 430px;
-    bottom: 65px;
+    bottom: 70px;
 }
 
 .leg-back .backleg-part3 {
@@ -123,10 +139,10 @@ body {
     border-radius: 80% 0% 0% 0%;
     position: absolute;
     left: 415px;
-    bottom: 45px;
+    bottom: 50px;
 }
 
-.leg-back .backleg-part4{
+.leg-back .backleg-part4 {
     height: 30px;
     width: 70px;
     background-color: #b44121;
@@ -137,23 +153,36 @@ body {
 }
 
 .leg-back .backleg-part5 {
-    width: 60px;
+    width: 40px;
+    height: 10px;
+    background-color: #b44121;
+    position: absolute;
+    left: 615px;
+    bottom: 65px;
+}
+
+.leg-back .backleg-part6 {
+    width: 80px;
     height: 25px;
     background-color: #b44121;
     border-radius: 100px 0% 0% 0%;
     position: absolute;
-    left: 595px;
+    left: 575px;
     bottom: 45px;
 }
 
+
+/* FRONT LEG'S PART  */
+
+
 .leg-front .frontleg-part1 {
     width: 40px;
-    height: 50px;
+    height: 55px;
     background-color: #e98a15;
     border-radius: 0px 0px 0px 40%;
     position: relative;
     left: 140px;
-    bottom: 25px;
+    bottom: 20px;
     z-index: 3;
     position: relative;
     left: 165px;
@@ -165,7 +194,7 @@ body {
     background-color: #e98a15;
     position: absolute;
     left: 455px;
-    bottom: 65px;
+    bottom: 70px;
     z-index: 3;
 }
 
@@ -176,43 +205,63 @@ body {
     border-radius: 80% 0% 0% 0%;
     position: absolute;
     left: 440px;
+    bottom: 50px;
+    z-index: 3;
+}
+
+.leg-front .frontleg-part4 {
+    height: 60px;
+    width: 60px;
+    background-color: #e98a15;
+    border-radius: 0 0 0 100px;
+    position: absolute;
+    left: 595px;
+    bottom: 75px;
+    z-index: 3;
+}
+
+.leg-front .frontleg-part5 {
+    width: 20px;
+    height: 10px;
+    background-color: #e98a15;
+    position: absolute;
+    left: 635px;
+    bottom: 70px;
+    z-index: 3;
+}
+
+.leg-front .frontleg-part6 {
+    width: 60px;
+    height: 25px;
+    background-color: #e98a15;
+    border-radius: 100px 0% 0% 0%;
+    position: absolute;
+    left: 595px;
     bottom: 45px;
     z-index: 3;
 }
 
+/* BODY  */
+
 .body {
     width: 300px;
-    height: 170px;
+    height: 150px;
     background: #e98a15;
     border-radius: 0px 70px 0px 150px;
     position: absolute;
-    bottom: 100px;
+    bottom: 120px;
     left: 355px;
     z-index: 3;
 }
 
-
-
-
+/* TAIL  */
 
 .tail {
     width: 20px;
     height: 100px;
     background: #e9850a;
-    border-radius: 100px 0 0 0 ;
+    border-radius: 100px 0 0 0;
     position: relative;
     left: 340px;
     bottom: 350px;
 }
-
-/* .leg.back {
-    position: absolute;
-    right: 20px;
-} */
-
-
-
-/* 
-
-
-*/
