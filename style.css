@@ -5,7 +5,7 @@ body {
 .dog {
     width: 400px;
     height: 300px;
-    margin: 20% 20%;
+    margin: 20% 10%;
 }
 
 
@@ -38,15 +38,15 @@ body {
     right: 0;
 }
 
-@keyframes rotate{
-            from{
-                transform: rotateX(0deg);
-            }
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg);
+    }
 
-            to{
-                transform: rotateX(360deg);
-            }
-        }
+    to {
+        transform: rotateX(360deg);
+    }
+}
 
 .eye {
     width: 15px;
@@ -56,28 +56,37 @@ body {
     position: absolute;
     top: 10px;
     right: 60px;
-    z-index: 1; 
-    animation: rotate 5s linear ;
+    z-index: 1;
+    animation: rotate 5s linear infinite;
 }
+
+ @keyframes movingear {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(10deg); }
+    }
 
 .ear1 {
     width: 30px;
-    height: 50px;
+    height: 60px;
     background: #e78f22;
     border-radius: 100px 0 0 0;
     position: absolute;
-    bottom: 80px;
+    bottom: 70px;
     right: 20px;
+    animation: movingear 1s alternate infinite;
+
 }
 
 .ear2 {
     width: 30px;
-    height: 50px;
+    height: 60px;
     background: #b44121;
     border-radius: 100px 0 0 0;
     position: absolute;
-    bottom: 80px;
-    right: 0px;
+    bottom: 70px;
+    right: 1px;
+    animation: movingear 1s alternate infinite;
+
 }
 
 
@@ -122,7 +131,6 @@ body {
 
 /* BACK LEG'S PART  */
 
-
 .leg-back .backleg-part1 {
     width: 40px;
     height: 50px;
@@ -138,7 +146,7 @@ body {
     height: 10px;
     background-color: #b44121;
     position: absolute;
-    left: 430px;
+    left: 297px;
     bottom: 70px;
 }
 
@@ -148,7 +156,7 @@ body {
     background-color: #b44121;
     border-radius: 80% 0% 0% 0%;
     position: absolute;
-    left: 415px;
+    left: 282px;
     bottom: 50px;
 }
 
@@ -159,7 +167,7 @@ body {
     border-radius: 0 0 0 100px;
     position: relative;
     left: 310px;
-    bottom: 95px;
+    bottom: 97px;
 }
 
 .leg-back .backleg-part5 {
@@ -167,8 +175,8 @@ body {
     height: 10px;
     background-color: #b44121;
     position: absolute;
-    left: 615px;
-    bottom: 65px;
+    left: 482px;
+    bottom: 67px;
 }
 
 .leg-back .backleg-part6 {
@@ -177,8 +185,8 @@ body {
     background-color: #b44121;
     border-radius: 100px 0% 0% 0%;
     position: absolute;
-    left: 575px;
-    bottom: 45px;
+    left: 442px;
+    bottom: 47px;
 }
 
 
@@ -203,7 +211,7 @@ body {
     height: 10px;
     background-color: #e98a15;
     position: absolute;
-    left: 455px;
+    left: 322px;
     bottom: 70px;
     z-index: 3;
 }
@@ -214,7 +222,7 @@ body {
     background-color: #e98a15;
     border-radius: 80% 0% 0% 0%;
     position: absolute;
-    left: 440px;
+    left: 307px;
     bottom: 50px;
     z-index: 3;
 }
@@ -225,8 +233,8 @@ body {
     background-color: #e98a15;
     border-radius: 0 0 0 100px;
     position: absolute;
-    left: 595px;
-    bottom: 75px;
+    left: 462px;
+    bottom: 73px;
     z-index: 3;
 }
 
@@ -235,7 +243,7 @@ body {
     height: 10px;
     background-color: #e98a15;
     position: absolute;
-    left: 635px;
+    left: 502px;
     bottom: 70px;
     z-index: 3;
 }
@@ -246,8 +254,8 @@ body {
     background-color: #e98a15;
     border-radius: 100px 0% 0% 0%;
     position: absolute;
-    left: 595px;
-    bottom: 45px;
+    left: 462px;
+    bottom: 47px;
     z-index: 3;
 }
 
@@ -258,13 +266,20 @@ body {
     height: 150px;
     background: #e98a15;
     border-radius: 0px 70px 0px 150px;
-    position: absolute;
-    bottom: 120px;
-    left: 355px;
     z-index: 3;
 }
 
 /* TAIL  */
+
+@keyframes wag {
+    from {
+        transform: rotate(5deg);
+    }
+
+    to {
+        transform: rotate(-5deg);
+    }
+}
 
 .tail {
     width: 20px;
@@ -274,5 +289,6 @@ body {
     position: relative;
     left: 340px;
     bottom: 350px;
+    animation: wag 1s alternate infinite;
 }
 
